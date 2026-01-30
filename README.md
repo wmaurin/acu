@@ -31,14 +31,13 @@ acu port scan <host>           # Scan common ports on a host
 ```bash
 acu disk largest [path]        # Find largest files/directories (sorted, human-readable)
 acu disk clean [path]          # Find and remove common junk (node_modules, __pycache__, .DS_Store, etc.)
-acu file dup <path>            # Find duplicate files by content hash
 ```
 
 ### Network
 
 ```bash
-acu speed                      # Network speed test
-acu http <url>                 # HTTP request with timing breakdown (DNS, connect, TLS, TTFB)
+acu net speed                      # Network speed test
+acu net http <url>                 # HTTP request with timing breakdown (DNS, connect, TLS, TTFB)
 ```
 
 ### SSH
@@ -61,9 +60,9 @@ acu gen secret [length]        # Generate base64 secret for configs
 ### Encoding
 
 ```bash
-acu encode <format> <string>   # Encode string (format: base64, url, html)
-acu decode <format> <string>   # Decode string (format: base64, url, html)
-acu hash <file>                # Generate md5, sha1, sha256 checksums for a file
+acu codec encode <format> <string>   # Encode string (format: base64, url, html)
+acu codec decode <format> <string>   # Decode string (format: base64, url, html)
+acu codec hash <file>                # Generate md5, sha1, sha256 checksums for a file
 ```
 
 ### Terminal-Agent (maybe? Llama?)
